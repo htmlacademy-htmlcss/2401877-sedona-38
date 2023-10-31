@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format(woff2);
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.header-navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-primary {
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+.navigation-user-button {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.hero {
+    background-color: #000000;
+    background-image: url("../images/backgrounds/main-background.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.title-h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-h2-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    text-align: center;
+}
+
+.advantages-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+
+.advantages-card-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.advantages-card-bright {
+    background-color: #82B3D3;
+}
+
+.advantages-card-bright h3, .advantages-card-bright p {
+    color: #FFFFFF;
+}
+
+.advantages-card-light {
+    background-color: #83B3D31F;
+}
+
+.advantages-card-medium {
+    background-color: #83B3D333;
+}
+
+.services-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+
+.services-card-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.services-card-medium {
+    background-color: #83B3D31F;
+}
+
+.services-card-light {
+    background-color: #FFFFFF;
+}
+
+.newsletter-main {
+    background-image: url("../images/backgrounds/newsletter-background.jpg");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.newsletter-title {
+    color: #FFFFFF;
+}
+
+.newsletter-description {
+    color: #FFFFFF;
+}
+
+.newsletter-field {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-secondary {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.footer-address-phone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.filters {
+    background-image: url("../images/backgrounds/filters-background.jpg");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+fieldset {
+    border:0 none;
+}
+
+.filters-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.filters-group-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.filters-control-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.filters-price-form input {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-apply {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.button-reset {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0);
+}
+
+.result-hotels {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.select-control {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.sort-buttons-link {
+    border: 2px solid #E5E5E5;
+}
+
+.sort-buttons-link-current {
+    border: 2px solid #000000;
+}
+
+.hotel-card {
+    border: 1px solid #E6E6E6;
+}
+
+.hotel-card-title a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.hotel-card-details {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-card-button {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button-active {
+    background-color: #7DB54F;
+}
+
+.hotel-card-rating {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.pagination-more {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.newsletter .newsletter-title, .newsletter .newsletter-description {
+    color: #000000;
+    text-align: center;
+}
