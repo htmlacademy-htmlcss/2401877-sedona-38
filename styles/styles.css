@@ -14,27 +14,105 @@
     font-display: swap;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1280px;
     font-family: "PT Sans", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
     color: #000000;
     background-color: #F2F2F2;
 }
 
 .page-container {
-    width: 1200px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100%;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
 }
 
+.main-header {
+    display: flex;
+    max-height: 64px;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1060px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.main-header-container {
+    width: 1060px;
+}
+
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header-logo {
+    margin-right: 28px;
+    z-index: 1;
+}
+
+.header-navigation-list {
+  display: flex;
+  width: 339px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation-user-list {
+    display: flex;
+    width: 268px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .header-navigation-link {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
     text-decoration: none;
+    padding: 20px 16px;
+
+}
+
+.navigation-user-link {
+    display: block;
+    padding: 22px 12px;
 }
 
 .button {
@@ -55,6 +133,12 @@ body {
 .navigation-user-button {
     font-size: 16px;
     line-height: 20px;
+    padding: 8px 34px;
+}
+
+.main-container {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .hero {
@@ -65,8 +149,74 @@ body {
     background-repeat: no-repeat;
 }
 
+.main-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 82px;
+    margin-top: 51px;
+}
+
+.advantages-header {
+    padding-top: 69px;
+    min-height: 282px;
+}
+
+.advantages-title {
+    margin-bottom: 141px;
+    margin-top: 0;
+    width: 620px;
+    margin: 0 auto;
+}
+
+/* было так + в диве контейнер (убрала)
+.advantages-header {
+    display: flex;
+    height: 282px;
+}
+
+.advantages-header-container {
+    flex-wrap: wrap;
+    margin-top: 69px;
+    margin-bottom: 90px;
+}
+
+.advantages-title {
+    width: 620px;
+    margin: 0 auto;
+}
+*/
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {
+    display: flex;
+}
+
+.advantages-card {
+    width: 400px;
+    max-height: 385px;
+    padding: 102px 85px;
+    margin: 0;
+}
+
+.advantages-image {
+    min-height: 100%;
+}
+
 .visually-hidden {
-    display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
 }
 
 .title-h2 {
@@ -92,6 +242,10 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #000000;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 62px;
+    max-width: 175px;
 }
 
 .advantages-card-description {
@@ -116,6 +270,29 @@ body {
 
 .advantages-card-medium {
     background-color: #83B3D333;
+}
+
+.services-header {
+    padding-top: 64px;
+    min-height: 246px;
+}
+
+.services-title {
+    margin-bottom: 64px;
+    margin-top: 0;
+    width: 505px;
+    margin: 0 auto;
+}
+
+.services-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.services-card {
+    padding: 81px 85px;
+    max-width: 400px;
 }
 
 .services-card-title {
@@ -143,12 +320,35 @@ body {
     background-color: #FFFFFF;
 }
 
+/* лишний отступ (?) по высоте получилась больше секция*/
+.hotel-search {
+    min-height: 406px;
+}
+
+.hotel-search-container {
+    padding: 96px 304px;
+}
+
+.hotel-search-description {
+    margin-bottom: 54px;
+}
+
+.button-hotel-search {
+    padding: 8px 50px;
+}
+/*по высоте получилась больше секция (?) что-то с формой*/
 .newsletter-main {
     background-image: url("../images/backgrounds/newsletter-background.jpg");
     background-color: #000000;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    min-height: 414.86px;
+}
+
+.newsletter-main-container {
+    padding: 96px 258px;
+    margin-top: 0;
 }
 
 .newsletter-title {
@@ -157,6 +357,14 @@ body {
 
 .newsletter-description {
     color: #FFFFFF;
+    width: 475px;
+    margin: 0 auto;
+}
+
+.newsletter-form-container {
+    display: flex;
+    margin-top: 54px;
+    align-items: center;
 }
 
 .newsletter-field {
@@ -167,12 +375,56 @@ body {
     color: #000000;
     background-color: #F2F2F2;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    width: 452px;
+    height: 52px;
 }
 
 .button-secondary {
     color: #FFFFFF;
     background-color: #82B3D3;
+}
+
+.button-secondary-newsletter {
+    border-radius: 0 4px 4px 0;
+    padding: 8px 50px;
+    margin-left: 0;
+}
+
+.main-footer {
+    min-height: 120px;
+}
+
+.footer-container {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1060px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.social-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+.social-link-vkontakte {
+    display: block;
+    padding: 13px 11.67px;
+}
+
+.social-link-telegram {
+    display: block;
+    padding: 12px 14.67px;
+}
+
+.social-link-youtube {
+    display: block;
+    padding: 11.5px 12.67px;
 }
 
 .footer-address-phone {
@@ -330,6 +582,9 @@ fieldset {
     background-color: #FFFFFF;
 }
 
+.newsletter {
+    min-height: 414.86px;
+}
 .newsletter .newsletter-title, .newsletter .newsletter-description {
     color: #000000;
     text-align: center;
