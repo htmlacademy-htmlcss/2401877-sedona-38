@@ -314,6 +314,7 @@ ul {
 
 .hotel-search-description {
     margin-bottom: 54px;
+    margin-top: 0;
 }
 
 .button-hotel-search {
@@ -326,30 +327,30 @@ ul {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    min-height: 416px;
 }
 
 .newsletter-main-container {
-    padding: 96px 258px;
-    margin-top: 0;
+    padding: 96px;
+    margin: 0 auto;
+    max-width: 684px;
 }
 
 .newsletter-title {
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .newsletter-description {
     color: #FFFFFF;
-    width: 475px;
-    margin: 0 auto;
+    max-width: 475px;
+    margin-top: 0;
+    margin-bottom: 54px;
 }
 
 .newsletter-form {
-  display: flex;
-}
-
-.newsletter-form-container {
-    margin-top: 54px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .newsletter-field {
@@ -362,7 +363,6 @@ ul {
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px 0 0 4px;
-    margin-right: 0;
     width: 452px;
     height: 52px;
 }
@@ -375,7 +375,6 @@ ul {
 .button-secondary-newsletter {
     border-radius: 0 4px 4px 0;
     padding: 8px 50px;
-    margin-left: 0;
 }
 
 .main-footer {
