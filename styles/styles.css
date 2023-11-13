@@ -36,6 +36,20 @@ body {
     background-color: #F2F2F2;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  position: absolute;
+  clip-path: inset(100%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
@@ -43,27 +57,28 @@ body {
     max-width: 1200px;
     min-height: 100%;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
-.main-header {
+/*.main-header {
     display: flex;
     max-height: 64px;
     max-width: 1060px;
     margin: 0 auto;
-}
+}*/
 
 .container {
-    display: flex;
     max-width: 1060px;
     width: 100%;
-    padding: 0;
     margin: 0 auto;
-    justify-content: center;
 }
 
 .main-header-container {
+    display: flex;
     width: 1060px;
+    max-height: 64px;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
 .header-navigation {
@@ -88,7 +103,7 @@ body {
 .navigation-user-list {
     display: flex;
     width: 268px;
-    margin: 0;
+    margin: 0 0 0 auto;
     padding: 0;
     align-items: center;
     flex-wrap: wrap;
@@ -116,6 +131,7 @@ ul {
 }
 
 .button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -147,13 +163,13 @@ ul {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    padding-top: 51px;
+    padding-bottom: 82px;
 }
 
 .main-logo {
     display: block;
     margin: 0 auto;
-    margin-bottom: 82px;
-    margin-top: 51px;
 }
 
 .advantages-header {
@@ -162,29 +178,9 @@ ul {
 }
 
 .advantages-title {
-    margin-bottom: 141px;
-    margin-top: 0;
     width: 620px;
     margin: 0 auto;
 }
-
-/* было так + в диве контейнер (убрала)
-.advantages-header {
-    display: flex;
-    height: 282px;
-}
-
-.advantages-header-container {
-    flex-wrap: wrap;
-    margin-top: 69px;
-    margin-bottom: 90px;
-}
-
-.advantages-title {
-    width: 620px;
-    margin: 0 auto;
-}
-*/
 
 .advantages-list {
     display: flex;
@@ -208,26 +204,16 @@ ul {
     min-height: 100%;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-}
-
 .title-h2 {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 0;
 }
 
-.title-h2-description {
+.text-description {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -278,8 +264,6 @@ ul {
 }
 
 .services-title {
-    margin-bottom: 64px;
-    margin-top: 0;
     width: 505px;
     margin: 0 auto;
 }
@@ -320,13 +304,12 @@ ul {
     background-color: #FFFFFF;
 }
 
-/* лишний отступ (?) по высоте получилась больше секция*/
 .hotel-search {
-    min-height: 406px;
+    max-height: 406px;
 }
 
 .hotel-search-container {
-    padding: 96px 304px;
+    padding: 96px;
 }
 
 .hotel-search-description {
@@ -336,14 +319,13 @@ ul {
 .button-hotel-search {
     padding: 8px 50px;
 }
-/*по высоте получилась больше секция (?) что-то с формой*/
+
 .newsletter-main {
     background-image: url("../images/backgrounds/newsletter-background.jpg");
     background-color: #000000;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    min-height: 414.86px;
 }
 
 .newsletter-main-container {
@@ -361,13 +343,17 @@ ul {
     margin: 0 auto;
 }
 
+.newsletter-form {
+  display: flex;
+}
+
 .newsletter-form-container {
-    display: flex;
     margin-top: 54px;
     align-items: center;
 }
 
 .newsletter-field {
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -397,6 +383,7 @@ ul {
 }
 
 .footer-container {
+    display: flex;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1060px;
@@ -404,6 +391,7 @@ ul {
     padding-bottom: 30px;
 }
 
+/* можно отцентровать каждый элемент без паддингов, задать ширину и высоту флексу?*/
 .social-list {
     display: flex;
     margin: 0;
@@ -414,17 +402,17 @@ ul {
 
 .social-link-vkontakte {
     display: block;
-    padding: 13px 11.67px;
+    padding: 13px 12px;
 }
 
 .social-link-telegram {
     display: block;
-    padding: 12px 14.67px;
+    padding: 12px 15px;
 }
 
 .social-link-youtube {
     display: block;
-    padding: 11.5px 12.67px;
+    padding: 12px 13px;
 }
 
 .footer-address-phone {
@@ -434,6 +422,7 @@ ul {
     color: #000000;
     text-align: center;
     text-decoration: none;
+    font-style: normal;
 }
 
 .filters {
@@ -498,7 +487,7 @@ fieldset {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    background-color: rgba(0,0,0,0);
+    background-color: transparent;
 }
 
 .result-hotels {

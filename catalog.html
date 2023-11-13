@@ -60,8 +60,7 @@
             </ul>
           </header>
           <div class="filters-main">
-            <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
-            <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
+            <form id="filters-form" class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filters-group">
                 <legend class="filters-group-title">Инфраструктура:</legend>
                 <ul class="filters-list">
@@ -112,12 +111,12 @@
                 <span class="filters-group-title">Стоимость, ₽:</span>
                 <div class="filters-price">
                   <div class="filters-price-form">
-                    <input id="start" type="text" name="amount" value="0">
-                    <label for="start">от</label>
+                    <input id="filters-form-start" type="text" name="amount" value="0">
+                    <label for="filters-form-start">от</label>
                   </div>
                   <div class="filters-price-form">
-                    <input id="end" type="text" name="amount" value="9000">
-                    <label for="end">до</label>
+                    <input id="filters-form-end" type="text" name="amount" value="9000">
+                    <label for="filters-form-end">до</label>
                   </div>
                 </div>
               </div>
