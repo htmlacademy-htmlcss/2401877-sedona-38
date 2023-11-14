@@ -60,13 +60,6 @@ body {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
-/*.main-header {
-    display: flex;
-    max-height: 64px;
-    max-width: 1060px;
-    margin: 0 auto;
-}*/
-
 .container {
     max-width: 1060px;
     width: 100%;
@@ -439,10 +432,6 @@ ul {
     margin-bottom: 40px;
 }
 
-fieldset {
-    border: 0 none;
-}
-
 .filters-header-title {
     font-weight: 700;
     font-size: 60px;
@@ -481,6 +470,7 @@ fieldset {
   width: 150px;
   height: 157px;
   margin-right: 70px;
+  border: 0 none;
 }
 
 .filters-group-title {
@@ -507,10 +497,6 @@ fieldset {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-}
-
-.filters-price-group {
-
 }
 
 .filters-price-form input {
@@ -594,49 +580,67 @@ fieldset {
 }
 
 .catalog-main {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    gap: 20px;
+  }
 
 .hotel-card {
     display: flex;
     flex-direction: column;
-    max-width: 340px;
     padding: 20px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
 }
 
 .hotel-card-picture {
-    display: block;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 
 .hotel-card-title a {
     display: block;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
+    text-align: left;
     line-height: 28px;
     color: #000000;
     text-decoration: none;
 }
 
 .hotel-card-details {
+    display: flex;
+    justify-content: space-between;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    margin-bottom: 16px;
+}
+
+.hotel-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.hotel-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
 
 .hotel-card-button {
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
 }
